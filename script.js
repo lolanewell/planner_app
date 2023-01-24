@@ -8,19 +8,21 @@ function displayTime() {
 }
 setInterval(displayTime, 1000);
 
+// change row colour as time passes in day
 var timeblocks = $('.time');
-var row = $()
+var rowColour = $('.rowColour');
 
 timeblocks.each(function() {
     var now = moment();
     var hour = $('data-hour');
     if (hour < now) {
-        row.css("background-color","red");
+        rowColour.css("background-color","red");
     } else if (hour == now) {
-        row.css("background-color", "green");
+        rowColour.css("background-color", "green");
     } else {
-        row.css("background-color","gray");
+        rowColour.css("background-color","grey");
     }
 })
+
 
 
