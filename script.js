@@ -1,13 +1,13 @@
 // save reference to important DOM elements
 // current time and date
-/*var currentTimeDate = $('#time-display');
+var currentTimeDate = $('#time-display');
 
 function displayTime() {
     var rightNow = moment().format("HH:mm:ss [on the] DD MMMM YYYY");
     currentTimeDate.text(rightNow);
 }
 setInterval(displayTime, 1000);
-*/
+
 var timeblocks = $('.time');
 var row = $()
 
